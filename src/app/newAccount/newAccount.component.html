@@ -1,0 +1,35 @@
+<ActionBar>
+    <Label text="Crear Cuenta"></Label>
+</ActionBar>
+<ScrollView>
+
+    <StackLayout orientation="vertical">
+        <Image src="res://icon-76" stretch="none" horizontalAlignment="center"></Image>
+
+        <label text="Correo electronico"></label>
+        <TextField #email [(ngModel)]="user.email" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_email"></label>
+
+        <label text="Nombre"></label>
+        <TextField [(ngModel)]="user.nombre"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_nombre"></label>
+
+        <label text="Apellido"></label>
+        <TextField [(ngModel)]="user.apellido"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_apellido"></label>
+
+        <label text="Telefono"></label>
+        <TextField [(ngModel)]="user.telefono"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_tel"></label>
+
+        <label text="Contraseña"></label>
+        <TextField [(ngModel)]="user.password"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_pass"></label>
+
+        <Button class="btn-default-one" text="Crear cuenta" (tap)="createNewAccount()">
+           
+
+    </Button>
+    </StackLayout>
+
+</ScrollView>

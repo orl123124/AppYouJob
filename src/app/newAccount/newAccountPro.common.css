@@ -1,0 +1,84 @@
+StackLayout {
+    margin-top: 25;
+    margin-left: 10;
+    margin-right: 10;
+    padding-bottom: 15;
+    background-color: white;
+}
+
+.newAccount-button {
+    background-color: rgb(81, 150, 253);
+    color: white;
+    margin-top: 20;
+}
+
+.lbl-new-account {
+    color: red;
+    font-size: 12px;
+}
+
+.action-bar {
+    background-color: rgb(81, 150, 253);
+    color: White;
+}
+
+.action-bar-label {
+    font-family: 'Open Sans', 'OpenSans-Bold';
+    font-weight: bold;
+    color: White;
+}
+
+.scf-input {
+    border-bottom-width: 1;
+    border-bottom-color: #f0ebeb;
+    padding: 4 32 4 0;
+    height: 28;
+}
+
+.select-date {
+    background-color: rgb(245, 241, 241);
+    margin: 10 24;
+    border-radius: 10;
+}
+
+.overlay {
+    background-color: #024184;
+    opacity: 0.5;
+}
+
+.title-select-date {
+    padding: 16 0 4 0;
+    text-align: center;
+    color: #024184;
+    font-weight: 500;
+}
+
+.btn-next {
+    background-color: #f6bd00;
+    color: #ffffff;
+    padding: 10 15;
+    font-weight: bold;
+}
+
+.btn-previous {
+    background-color: #024184;
+    color: #ffffff;
+    padding: 10 15;
+    font-weight: bold;
+}
+
+.btn-previous:disabled {
+    background-color: #cccccc;
+}
+
+.btn-next:disabled {
+    background-color: #cccccc;
+}
+
+.animate-bounceInUp-delay-0ms {
+    opacity: 0;
+    animation-name: bounceInUp;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}

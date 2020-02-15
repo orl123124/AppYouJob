@@ -1,0 +1,54 @@
+<ActionBar>
+    <Label text="Pre Afiliación"></Label>
+</ActionBar>
+<ScrollView>
+
+
+    <StackLayout orientation="vertical">
+
+
+        <Image src="res://icon-76" stretch="none" horizontalAlignment="center"></Image>
+        <label text="Correo electronico"></label>
+        <TextField #email [(ngModel)]="user.email" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_email"></label>
+
+        <label text="Nombre"></label>
+        <TextField [(ngModel)]="user.nombre"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_nombre"></label>
+
+        <label text="Apellido"></label>
+        <TextField [(ngModel)]="user.apellido"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_apellido"></label>
+
+        <label text="Telefono"></label>
+        <TextField [(ngModel)]="user.telefono"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_tel"></label>
+
+        <label text="Contraseña"></label>
+        <TextField [(ngModel)]="user.password" secure="true"></TextField>
+        <label class="lbl-new-account" [text]="lblerro_pass"></label>
+
+        <!-- start-->
+
+        <!--<GridLayout height="100%"> -->
+
+        <ns-form-detail (openSelectDate)="onOpenSelectDate($event)" [selectedDate]="selectedDate" [isOnOpenDepartureDate]="isOnOpenDepartureDate">
+        </ns-form-detail>
+
+        <!--</GridLayout>-->
+
+        <GridLayout row="0" col="0" rowSpan="4" colSpan="2" opacity="0" class="overlay" id="overlayGridLayout"></GridLayout>
+        <GridLayout row="0" col="0" rowSpan="4" colSpan="2" rows="auto, auto, auto" columns="*,*" verticalAlignment="center" visibility="hidden" opacity="0" class="select-date" id="selectDateGridLayout">
+            <Label row="0" col="0" colSpan="2" text="Seleccione la fecha:" class="title-select-date"></Label>
+            <DatePicker row="1" col="0" colSpan="2" [(ngModel)]="dateSelector" (dateChange)="onDateChanged($event)" verticalAlignment="center"></DatePicker>
+            <Button row="2" col="0" text="Cancel" class="btn-next" (tap)="onCloseSelectDate(true)"></Button>
+            <Button row="2" col="1" text="OK" class="btn-previous" (tap)="onCloseSelectDate(false)"></Button>
+        </GridLayout>
+
+        <!-- fin-->
+
+        <Button class="btn-default-one" text="Crear cuenta" (tap)="createNewAccount()"> </Button>
+
+    </StackLayout>
+
+</ScrollView>

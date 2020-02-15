@@ -1,0 +1,17 @@
+/* Add mobile styles for the component here.  */
+
+StackLayout label {
+    color: rgb(10, 10, 10);
+    font-size: 16px;
+    margin: 20;
+}
+
+StackLayout {
+    margin-left: 30;
+    margin-right: 30;
+    padding-bottom: 15;
+    background-color: white;
+    border-radius: 5;
+    height: 260;
+    padding-top: 8;
+}

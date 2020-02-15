@@ -1,0 +1,29 @@
+StackLayout {
+    margin-top: 25;
+    margin-left: 10;
+    margin-right: 10;
+    padding-bottom: 15;
+    background-color: white;
+}
+
+.newAccount-button {
+    background-color: rgb(81, 150, 253);
+    color: white;
+    margin-top: 20;
+}
+
+.lbl-new-account {
+    color: red;
+    font-size: 12px;
+}
+
+.action-bar {
+    background-color: rgb(81, 150, 253);
+    color: White;
+}
+
+.action-bar-label {
+    font-family: 'Open Sans', 'OpenSans-Bold';
+    font-weight: bold;
+    color: White;
+}

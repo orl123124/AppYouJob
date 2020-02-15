@@ -1,0 +1,22 @@
+<ActionBar class="action-default-one">
+    <Label text="Categorías" class="action-bar-label"></Label>
+</ActionBar>
+
+
+
+
+<GridLayout tkExampleTitle tkToggleNavButton>
+    <RadListView [items]="items" marginRight="-2" backgroundColor="#e6e6e6" (itemLoading)="onItemLoading($event)">
+        <ListViewStaggeredLayout tkListViewLayout scrollDirection="Vertical" spanCount="2"></ListViewStaggeredLayout>
+        <ng-template tkListItemTemplate let-item="item">
+            <StackLayout margin="15" borderRadius="10" backgroundColor="gray" [nsRouterLink]="['/supplier', item.id]">
+                <Image src="{{ item.imageSrc }}" width="200" height="120" stretch="aspectFill"></Image>
+                <StackLayout class="" backgroundColor="white" padding="10">
+                    <Label text="{{ item.name }}" class="item-name" textWrap="true"></Label>
+                    <!-- <Label text="{{ item.desc }}" class="item-desc" textWrap="true"></Label>
+                    <Label text="{{ item.price }}" class="item-price"></Label> -->
+                </StackLayout>
+            </StackLayout>
+        </ng-template>
+    </RadListView>
+</GridLayout>

@@ -1,0 +1,30 @@
+StackLayout {
+    margin-left: 30;
+    margin-right: 30;
+    padding-bottom: 15;
+    background-color: white;
+    border-radius: 5;
+}
+
+Image {
+    margin-top: 5;
+    margin-bottom: 20;
+}
+
+.submit-button {
+    background-color: rgb(66, 103, 178);
+    color: white;
+    margin-top: 20;
+}
+
+.new-Account-button {
+    color: white;
+    margin-top: 0;
+    background-color: rgb(81, 150, 253);
+    /*background-color: rgb(202, 204, 206);*/
+}
+
+StackLayout {
+    height: 400;
+    padding-top: 8;
+}

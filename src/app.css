@@ -1,0 +1,149 @@
+/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. You can learn more about the 
+NativeScript core theme at https://github.com/nativescript/theme
+The imported CSS rules must precede all other types of rules.
+*/
+
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/default.css";
+@import 'style/animate.css';
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+
+
+/*
+The following CSS rule changes the font size of all Buttons that have the
+"-primary" class modifier.
+*/
+
+Button.-primary {
+    font-size: 18;
+}
+
+Button,
+TextField {
+    margin-top: 0;
+    margin-left: 16;
+    margin-right: 16;
+    margin-bottom: 8;
+    font-size: 17;
+}
+
+label {
+    margin-top: -0;
+    margin-left: 16;
+    margin-bottom: 0;
+}
+
+Button {
+    border-radius: 5;
+}
+
+SegmentedBar {
+    margin: 10;
+}
+
+.btn-default-celeste {
+    background-color: rgb(81, 150, 253);
+    color: white;
+    margin-top: 10;
+}
+
+.action-bar {
+    background-color: rgb(81, 150, 253);
+    color: White;
+}
+
+.action-bar-label {
+    font-family: 'Open Sans', 'OpenSans-Bold';
+    font-weight: bold;
+    color: White;
+    font-size: 14;
+}
+
+.animate-bounceInUp-delay-0ms {
+    opacity: 0;
+    animation-name: bounceInUp;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}
+
+.action-default-one {
+    background-color: rgb(66, 103, 178);
+    color: White;
+}
+
+.btn-default-one {
+    background-color: rgb(66, 103, 178);
+    color: white;
+    margin-top: 10;
+}
+
+.lineBreak {
+    height: 7;
+    border: none;
+    color: #e0e0e0;
+    background-color: #e0e0e0;
+}
+
+.line {
+    height: 0.5;
+    border: none;
+    color: #e0e0e0;
+    background-color: #e0e0e0;
+}
+
+.card-img {
+    width: 100%;
+    height: 150;
+    margin-bottom: 5;
+}
+
+.fa {
+    font-family: "FontAwesome"
+}
+
+.category-icon {
+    text-align: center;
+    padding-top: 5;
+    color: white;
+    border-color: white;
+    vertical-align: center;
+    font-size: 25;
+    border-width: 1;
+    border-radius: 50%;
+    margin-top: 4;
+    margin-right: 15;
+    width: 40;
+    height: 40;
+}
+
+.item-name {
+    font-size: 14;
+    font-weight: bold;
+}
+
+.rating-value {
+    margin-left: 5;
+}
+
+.item-category {
+    font-size: 14;
+    color: #828282;
+}
+
+.rating-icon {
+    padding-top: 3;
+    color: #FFE900;
+    font-size: 14;
+    margin-left: 10;
+}

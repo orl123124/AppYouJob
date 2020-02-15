@@ -1,0 +1,9 @@
+<StackLayout orientation="vertical" borderColor="silver" borderWidth="2">
+    <Image src="res://icon-76" stretch="none" horizontalAlignment="center"></Image>
+    <TextField [(ngModel)]="user.email" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+    <TextField [(ngModel)]="user.password" hint="Password" secure="true"></TextField>
+    <Button class="submit-button" text="Iniciar Sessión" (tap)="submit()">
+    </Button>
+    <Button text="¿Olvidate tu contraseña?" (tap)="forgotPassword()"></Button>
+    <Button class="new-Account-button" text="Crear cuenta nueva" (tap)="newAccount()"></Button>
+</StackLayout>

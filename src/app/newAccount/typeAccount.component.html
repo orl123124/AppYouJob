@@ -1,0 +1,12 @@
+<ActionBar class="action-default-one">
+    <Label text="YouJob" class="action-bar-label"></Label>
+</ActionBar>
+<StackLayout orientation="vertical" borderColor="silver" borderWidth="2">
+    <Image src="res://icon-76" stretch="none" horizontalAlignment="center"></Image>
+    <label text="Seleccione tipo de usuario:"></label>
+    <SegmentedBar [items]="items" selectedIndex="0" selectedBackgroundColor="rgb(66, 103, 178)" (selectedIndexChange)="onSelectedIndexChange($event)">
+    </SegmentedBar>
+    <Button text=" Aceptar " class="btn-default-one" (tap)="createNewAccount() "></Button>
+
+
+</StackLayout>

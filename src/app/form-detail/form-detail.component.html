@@ -1,0 +1,8 @@
+<GridLayout columns="*" rows="*,*">
+    <Label row="0" text="Fecha de Nacimiento"></Label>
+
+
+    <Label row="1" text='{{ departureDate | date:"y/M/d" }}' class="scf-input" (tap)="onOpenSelectDate(true)"></Label>
+
+
+</GridLayout>

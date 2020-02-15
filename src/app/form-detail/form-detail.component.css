@@ -1,0 +1,32 @@
+.title-label {
+    font-size: 16;
+    text-align: left;
+    color: #024184;
+}
+
+.scf-input {
+    border-bottom-width: 1;
+    border-bottom-color: #eeeeee;
+    padding: 4 32 4 0;
+    height: 29;
+    font-size: 16px;
+    margin-right: 20;
+}
+
+.body {
+    background-color: #ffffff;
+}
+
+.animate-bounceInLeft-delay-0ms {
+    opacity: 0;
+    animation-name: bounceInLeft;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}
+
+.scf-card {
+    border-radius: 10;
+    margin: 10;
+    padding: 24 0;
+}
