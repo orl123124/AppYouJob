@@ -32,6 +32,6 @@ export class SupplierComponent implements OnInit {
     }
 
 
-  //  showItem(itemId: string) {}
+    showItem(itemId: string) {}
 }
 
