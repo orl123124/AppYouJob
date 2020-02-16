@@ -147,3 +147,18 @@ SegmentedBar {
     font-size: 14;
     margin-left: 10;
 }
+
+
+/*  test */
+
+.big-header {
+    background-color: #AA222222;
+    color: white;
+    vertical-align: bottom;
+    padding: 10 10;
+    font-size: 24;
+}
+
+.thumb {
+    vertical-align: top;
+}

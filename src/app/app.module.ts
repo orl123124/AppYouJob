@@ -22,6 +22,8 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { DashboardModule } from "./dashboard/dashboard.module";
 
 import { ServiceLogin } from "./services_/service-login";
+import { ServiceSupplier } from "./services_/service-supplier";
+
 import { FormDetailComponent } from "./form-detail/form-detail.component";
 
 
@@ -64,7 +66,7 @@ firebase.init({
         ItemDetailComponent,
          FormDetailComponent
     ],
-    providers: [ServiceLogin],
+    providers: [ServiceLogin, ServiceSupplier],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

@@ -8,7 +8,7 @@ import { Color } from "tns-core-modules/color";
     styleUrls: ['dashboard.common.css']
 })
 export class DashboardComponent implements OnInit { 
-
+  
     items: { id: string ,name: string,  imageSrc: string }[] = [
         { id:"0", name: "Domestica",    imageSrc: "https://placem.at/things?w=500&txt=0&random=9" },
         { id:"1", name: "Pintor",       imageSrc: "https://placem.at/things?w=500&txt=0&random=6" },
