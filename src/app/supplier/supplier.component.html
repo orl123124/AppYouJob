@@ -56,6 +56,7 @@
 
 <GridLayout>
     <ListView [items]="newsItems" class="list-group" [itemTemplateSelector]="templateSelector">
+
         <ng-template nsTemplateKey="big" let-item="item">
             <GridLayout class="list-group-item">
                 <Image [src]="item.imageUrl" stretch="aspectFit" height="200"></Image>
@@ -65,13 +66,45 @@
         </ng-template>
 
         <ng-template nsTemplateKey="small" let-item="item">
-            <GridLayout columns="auto *" rows="30 auto" class="list-group-item">
-                <Image [src]="item.imageUrl" stretch="aspectFill" row="0" col="0" rowSpan="2" width="100" height="100" class="thumb img-circle"></Image>
+            <GridLayout columns="100, 125, *" rows="30, auto,*" style="background-color: rgb(216, 212, 212);" class="list-group-item">
+                <Image width="100" height="100" style=" margin: 0%;" [src]="item.imageUrl" row="0" col="0" rowSpan="2" class="thumb img-circle img-border"></Image>
 
-                <Label row="0" col="1" [text]="item.title" class="list-group-heading"></Label>
-                <Label row="1" col="1" [text]="item.text" class="list-group-item-text" textWrap="true"></Label>
+                <Label class="fas fa-star" row="0" col="1" text="&#xf005; &#xf005; &#xf005; &#xf005; &#xf005;" style="color:goldenrod ;margin: 0%;font-size: xx-large;"></Label>
+
+                <Label row="0" col="2" style="margin: 0%;" text="{{item.califi}}/5.0"></Label>
+                <Label colSpan="2" row="1" col="1" style=" margin: 0%;" [text]="item.text" textWrap="true"></Label>
+                <Label colSpan="3" row="2" col="0" [text]="item.title" class="small-header"></Label>
             </GridLayout>
         </ng-template>
+
+        <!--   
+     <ng-template nsTemplateKey="small" let-item="item">
+            <GridLayout columns="auto *" rows="30 auto" class="list-group-item">
+                <Image style="background-color:green;" [src]="item.imageUrl" stretch="aspectFill" row="0" col="0" rowSpan="2" width="100" height="100" class="thumb img-circle"></Image>
+
+
+                <Label row="0" col="1" style="background-color:gray;" [text]="item.title" class="list-group-heading"></Label>
+                <Label row="1" col="1" style="background-color: red;" [text]="item.text" class="list-group-item-text" textWrap="true"></Label>
+                <Label class="fas fa-star" row="1" col="1" text="&#xf005;" style="color:goldenrod;font-size: xx-large;background-color:hotpink;"></Label>
+
+            </GridLayout>
+        </ng-template>
+
+
+
+      <ng-template nsTemplateKey="big" let-item="item">
+            <GridLayout columns="50, auto, *" rows="50, auto, *" width="210" height="210" backgroundColor="lightgray">
+                <Label text="Label 1" row="0" col="0" backgroundColor="red"></Label>
+                <Label text="Label 2" row="0" col="1" colSpan="2" backgroundColor="green"></Label>
+                <Label text="Label 3" row="1" col="0" rowSpan="2" backgroundColor="blue"></Label>
+                <Label text="Label 4" row="1" col="1" backgroundColor="yellow"></Label>
+                <Label text="Label 5" row="1" col="2" backgroundColor="orange"></Label>
+                <Label text="Label 6" row="2" col="1" backgroundColor="pink"></Label>
+                <Label text="Label 7" row="2" col="2" backgroundColor="purple"></Label>
+            </GridLayout>
+        </ng-template>
+
+        -->
 
         <ng-template nsTemplateKey="small-no-image" let-item="item">
             <StackLayout class="list-group-item">

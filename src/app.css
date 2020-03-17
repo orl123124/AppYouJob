@@ -159,6 +159,39 @@ SegmentedBar {
     font-size: 24;
 }
 
+.small-header {
+    background-color: #AA222222;
+    color: white;
+    vertical-align: bottom;
+    padding: 5 5;
+    margin: 5 0 0 0;
+    font-size: 14;
+    text-align: center;
+}
+
 .thumb {
-    vertical-align: top;
+    vertical-align: middle;
+}
+
+
+/* awesome icon */
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+}
+
+.far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.fa,
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.red {
+    color: red
 }

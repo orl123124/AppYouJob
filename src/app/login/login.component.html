@@ -2,8 +2,11 @@
     <Image src="res://icon-76" stretch="none" horizontalAlignment="center"></Image>
     <TextField [(ngModel)]="user.email" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
     <TextField [(ngModel)]="user.password" hint="Password" secure="true"></TextField>
-    <Button class="submit-button" text="Iniciar Sessión" (tap)="submit()">
+    <Button class="submit-button fas" text="Iniciar Sessión &#xf138;" (tap)="submit()">
     </Button>
+
     <Button text="¿Olvidate tu contraseña?" (tap)="forgotPassword()"></Button>
-    <Button class="new-Account-button" text="Crear cuenta nueva" (tap)="newAccount()"></Button>
+    <Button class="new-Account-button far" text="Crear cuenta nueva &#xf007;" (tap)="newAccount()"></Button>
+
+
 </StackLayout>
