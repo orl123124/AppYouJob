@@ -13,6 +13,8 @@ import { NewAccountProComponent } from "./newAccount/newAccountPro.component";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormDetailComponent } from './form-detail/form-detail.component';
 import { SupplierComponent } from './supplier/supplier.component';
+//import { supl } from './supplier/supplier.component';
+import { SupplierDetailComponent } from './supplier-detail/supplier-detail.component';
 
 const routes: Routes = [
     { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -24,6 +26,7 @@ const routes: Routes = [
     { path: "dashboard", component: DashboardComponent/*,canActivate:[AuthGuard] */ },
 
     { path: "supplier/:id", component: SupplierComponent/*,canActivate:[AuthGuard] */ },
+    { path: "supplierDetail/:id", component: SupplierDetailComponent/*,canActivate:[AuthGuard] */ },
 
     { path: "items", component: ItemsComponent },
     { path: "item/:id", component: ItemDetailComponent },

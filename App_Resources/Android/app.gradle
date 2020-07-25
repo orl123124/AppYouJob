@@ -1,14 +1,21 @@
 // Add your native dependencies here:
 
 // Uncomment to add recyclerview-v7 dependency
-//dependencies {
-//	implementation 'com.android.support:recyclerview-v7:+'
-//}
+/*
+dependencies {
+	implementation 'com.android.support:recyclerview-v7:+'
+}*/
 
 // If you want to add something to be applied before applying plugins' include.gradle files
 // e.g. project.ext.googlePlayServicesVersion = "15.0.1"
 // create a file named before-plugins.gradle in the current directory and place it there
-
+ /*
+dependencies {
+   compile 'com.google.firebase:firebase-core:11.8.0'
+   compile 'com.google.firebase:firebase-messaging:11.8.0'
+   compile "com.google.android.gms:play-services-base:11.8.0"
+}
+*/
 android {
   defaultConfig {
     minSdkVersion 17

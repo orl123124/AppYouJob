@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "509799501250",
+    "firebase_url": "https://youjobdb.firebaseio.com",
+    "project_id": "youjobdb",
+    "storage_bucket": "youjobdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509799501250:android:0ff4053ca361fc8c9f5a5b",
+        "android_client_info": {
+          "package_name": "io.orlandobarria.nsfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509799501250-fs1ej0tlsmiva0v9av1qthe3diqpme4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9OQ-OlchRUdKFRk8SF82OOQKD9llYNok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509799501250-fs1ej0tlsmiva0v9av1qthe3diqpme4v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "509799501250-cjbs363318s72mpeeho7mcj9t82t9lms.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.orlandobarria.nsfire"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

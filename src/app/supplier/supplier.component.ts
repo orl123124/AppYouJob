@@ -72,6 +72,7 @@ export class SupplierComponent implements OnInit {
 
         alert(this.newsItems.length );
     }
+ 
 
 }
 

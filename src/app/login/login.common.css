@@ -1,13 +1,21 @@
-StackLayout {
+.class_StackLayout {
     margin-left: 30;
     margin-right: 30;
     padding-bottom: 15;
     background-color: white;
-    border-radius: 5;
+    border-radius: 0;
+}
+
+.header_stackLayout {
+    margin-left: 30;
+    margin-right: 30;
+    padding-bottom: 15;
+    background-color: white;
+    border-radius: 0;
 }
 
 Image {
-    margin-top: 5;
+    margin-top: 8;
     margin-bottom: 20;
 }
 
@@ -18,13 +26,13 @@ Image {
 }
 
 .new-Account-button {
-    color: white;
+    color: rgb(54, 54, 54);
     margin-top: 0;
-    background-color: rgb(81, 150, 253);
-    /*background-color: rgb(202, 204, 206);*/
+    /* background-color: rgb(81, 150, 253); */
+    background-color: rgb(202, 204, 206);
 }
 
-StackLayout {
+.contenedorLogin {
     height: 400;
     padding-top: 8;
 }

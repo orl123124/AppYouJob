@@ -25,6 +25,7 @@ import { ServiceLogin } from "./services_/service-login";
 import { ServiceSupplier } from "./services_/service-supplier";
 
 import { FormDetailComponent } from "./form-detail/form-detail.component";
+import { SupplierDetailComponent } from './supplier-detail/supplier-detail.component';
 
 
 
@@ -61,6 +62,7 @@ firebase.init({
         NewAccountComponent,
         NewAccountProComponent,
         SupplierComponent,
+        SupplierDetailComponent,
 
         ItemsComponent,
         ItemDetailComponent,
